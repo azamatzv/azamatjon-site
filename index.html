@@ -2,10 +2,94 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tez kunda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #00c6ff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes float {
+            0%,100% {transform: translateY(0);}
+            50% {transform: translateY(-10px);}
+        }
+    </style>
 </head>
-<body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;background:black;color:white;">
-    <h1>Texnik ishlar olib borilmoqda...</h1>
-    <h2>Telegram a'loqa uchun: @lAzamat</h2>
+
+<body>
+
+    <div class="container">
+        <div class="icon">🚧</div>
+        <h1>Texnik ishlar olib borilmoqda</h1>
+        <h2>Tez orada yana ishga tushamiz</h2>
+
+        <a href="https://t.me/lAzamat" class="btn">
+            Telegram orqali bog‘lanish
+        </a>
+    </div>
+
 </body>
 </html>
